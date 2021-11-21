@@ -31,30 +31,41 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-        await message.reply_text(
-        f"""**Hey, I'm {bn} 🎀
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [𝐃𝐞𝐂𝐨𝐝𝐞-𝐃𝐞𝐯𝐬](https://t.me/DeeCodeDevs).
-Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
-        """,
+      await message.reply_text(
+        """𝐇𝐞𝐲, 𝐈'𝐦 𝐕𝐜 𝐁𝐨𝐭❤️🔥. 
+𝐈 𝐂𝐚𝐧 𝐏𝐥𝐚𝐲 𝐌𝐮𝐬𝐢𝐜 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭.
+𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐀𝐧𝐝 𝐏𝐥𝐚𝐲 𝐌𝐮𝐬𝐢𝐜 𝐅𝐫𝐞𝐞𝐥𝐲! 
+/help - 𝐓𝐨 𝐆𝐞𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬.✅""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐋𝐢𝐬𝐭🧰", url="https://telegra.ph/text-10-24")
+                        "🎶Oᴡɴᴇʀ❤🔥", url="https://t.me/its_Devil_xd")
                   ],[
                     InlineKeyboardButton(
-                       " 𝐒𝐮𝐩𝐩𝐨𝐫𝐭👿", url="https://t.me/DecodeSupport"
+                        "🔥ßƐSŦĪƐS ZᎾИƐ🔥", url="https://t.me/friends_forever_143"
                     ),
                     InlineKeyboardButton(
-                        "𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url="https://t.me/DeecodeBots"
-                    )
-                ],[
+                        "🔮 Channel 🔮", url="https://t.me/ELECTRO_UPDATES"
+                    )    
+                ],[ 
                     InlineKeyboardButton(
-                        "➕ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
-                ]
+                        "➕Aᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/RiCHA_X_NiTiNBOT?startgroup=true"
+                    )]
             ]
         ),
      disable_web_page_preview=True
     )
+
+@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
+async def gstart(_, message: Message):
+      await message.reply_text("""**Yes iᴍ on Fire🔥🔥**""",
+      reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🔥ßƐSŦĪƐS ZᎾИƐ🔥", url="https://t.me/friends_forever_143")
+                ]
+            ]
+        )
+   )
