@@ -126,7 +126,7 @@ async def hfmm(_, message):
     status = message.text.split(None, 1)[1]
     message.chat.id
     if status in ["OFF", "Off", "off"]:
-        lel = await message.reply("`Processing...`")
+        lel = await message.reply("`devilxangle Processing...`")
         if message.chat.id not in DISABLED_GROUPS:
             await lel.edit("This Chat is not In maintainence mode")
             return
@@ -136,7 +136,7 @@ async def hfmm(_, message):
         )
 
     elif status in ["ON", "On", "on"]:
-        lel = await message.reply("`Processing...`")
+        lel = await message.reply("`devilxangle Processing...`")
 
         if message.chat.id in DISABLED_GROUPS:
             await lel.edit("maintainence mode  already active in This Chat")
@@ -180,7 +180,7 @@ async def play(_, message: Message):
     if message.chat.id in DISABLED_GROUPS:
         await message.reply("**maintainence mode is on, ask admin to disable it!**")
         return
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 devilxangle **Processing...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -188,7 +188,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DeCode_Assistant"
+        user.first_name = "nitin_x_richa"
     usar = user
     wew = usar.id
     try:
@@ -211,7 +211,7 @@ async def play(_, message: Message):
                     await USER.join_chat(invitelink)
                     await USER.send_message(
                         message.chat.id,
-                        "Assistant joined this group for playing music in VC",
+                        "devilxangle Assistant joined this group for playing music in VC",
                     )
                     await lel.edit(
                         "<b>Assistant joined this chat</b>",
@@ -228,7 +228,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>"
+            f"<i>Hey {user.first_name}, devilxricha assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>"
         )
         return
 
@@ -247,7 +247,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a7adee6cf365d74734c5d.png"
+        thumb_name = "https://telegra.ph/file/24711daafd422d2cba969.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -255,8 +255,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
+                    InlineKeyboardButton("🚨 Support", url="t.me/electrobot_support"),
+                    InlineKeyboardButton("📡 Updates", url="t.me/electro_updates"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -293,8 +293,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                        InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
+                        InlineKeyboardButton("🚨 Support", url="t.me/electrobot_support"),
+                        InlineKeyboardButton("📡 Updates", url="t.me/electro_updates"),
                     ],
                     [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
                 ]
@@ -302,7 +302,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a7adee6cf365d74734c5d.png"
+            thumb_name = "https://telegra.ph/file/24711daafd422d2cba969.png"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -320,12 +320,12 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @DeCodeMusicBot**"
+                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @electro_updates**"
             )
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 devilxricha **Processing sounds...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -356,8 +356,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Support", url="t.me/decodesupport"),
-                    InlineKeyboardButton("📡 Updates", url="t.me/DeeCodebots"),
+                    InlineKeyboardButton("🚨 Support", url="t.me/electrobot_support"),
+                    InlineKeyboardButton("📡 Updates", url="t.me/electro_updates"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
