@@ -2,8 +2,8 @@
   "name": "devilmusic",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "logo": "https://telegra.ph/file/21e8e309addc276362496.jpg",
-  "repository": "https://github.com/TeamDeeCode/DeCoDeMusic",
+  "logo": "https://te.legra.ph/file/6fe34d8655cd01e9ba724.jpg",
+  "repository": "https://github.com/devilmusicop/devxric",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
